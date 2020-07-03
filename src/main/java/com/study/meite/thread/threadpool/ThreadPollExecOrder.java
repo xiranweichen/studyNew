@@ -1,7 +1,7 @@
 package com.study.meite.thread.threadpool;
 
+import com.study.shangguigu.basic.duotai.Person;
 import org.junit.Test;
-import shangguigu.basic.duotai.Person;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -66,7 +66,7 @@ class Person1 implements Callable<List<Person>> {
     }
 }
 
-class Person2 implements Callable<List<Person>> /*Runnable*/ {
+class Person2 implements Callable<List<Person>> {
 
     @Override
     public List<Person> call() throws Exception {
@@ -81,7 +81,7 @@ class Person2 implements Callable<List<Person>> /*Runnable*/ {
 
 }
 
-class Person3 implements Callable<List<Person>>/*Runnable*/ {
+class Person3 implements Callable<List<Person>>{
 
     @Override
     public List<Person> call() throws Exception {
@@ -95,7 +95,7 @@ class Person3 implements Callable<List<Person>>/*Runnable*/ {
     }
 }
 
-class Person4 implements Callable<List<Person>>/*Runnable */{
+class Person4 implements Callable<List<Person>>{
 
     @Override
     public List<Person> call() throws Exception {
@@ -109,7 +109,7 @@ class Person4 implements Callable<List<Person>>/*Runnable */{
     }
 }
 
-class Person5 implements Callable<List<Person>>/*Runnable */{
+class Person5 implements Callable<List<Person>>{
 
     @Override
     public List<Person> call() throws Exception {
@@ -123,7 +123,7 @@ class Person5 implements Callable<List<Person>>/*Runnable */{
     }
 }
 
-class Person6 implements Callable<List<Person>>/*Runnable */{
+class Person6 implements Callable<List<Person>>{
 
     @Override
     public List<Person> call() throws Exception {
