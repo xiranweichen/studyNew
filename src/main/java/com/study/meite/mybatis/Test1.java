@@ -28,7 +28,7 @@ public class Test1 {
     @Test
     public void testSelect() throws IllegalAccessException, InstantiationException {
         UserMapper mapper = SqlSession.getMapper(UserMapper.class);
-        User user = mapper.selectUser("lizhenhong", 22);
+        User user = mapper.selectUser("lizhenhong", 18);
         System.out.println("查询到的user信息：" + user.toString());
     }
 

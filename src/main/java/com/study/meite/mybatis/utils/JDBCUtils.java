@@ -31,11 +31,11 @@ public final class JDBCUtils {
         /*
          * 获取驱动
          */
-        driverClassName = "com.mysql.jdbc.Driver";
+        driverClassName = "com.mysql.cj.jdbc.Driver";
         /*
          * 获取URL
          */
-        URL = "jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf8";
+        URL = "jdbc:mysql://localhost:3306/test?serverTimezone=GMT";
         /*
          * 获取用户名
          */
