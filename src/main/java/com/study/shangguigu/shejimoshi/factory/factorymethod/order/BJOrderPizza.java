@@ -1,8 +1,9 @@
 package com.study.shangguigu.shejimoshi.factory.factorymethod.order;
 
-import shangguigu.shejimoshi.factory.factorymethod.pizza.BJCheesePizza;
-import shangguigu.shejimoshi.factory.factorymethod.pizza.BJPepperPizza;
-import shangguigu.shejimoshi.factory.factorymethod.pizza.Pizza;
+
+import com.study.shangguigu.shejimoshi.factory.factorymethod.pizza.BJCheesePizza;
+import com.study.shangguigu.shejimoshi.factory.factorymethod.pizza.BJPepperPizza;
+import com.study.shangguigu.shejimoshi.factory.factorymethod.pizza.Pizza;
 
 /**
  * @description: 北京的pizza订购

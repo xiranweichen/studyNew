@@ -5,11 +5,10 @@ import com.lmax.disruptor.RingBuffer;
 import com.lmax.disruptor.YieldingWaitStrategy;
 import com.lmax.disruptor.dsl.Disruptor;
 import com.lmax.disruptor.dsl.ProducerType;
-import meite.thread.disruptor.consumer.LongEventHandler;
-import meite.thread.disruptor.consumer.LongEventHandler2;
-import meite.thread.disruptor.entity.LongEvent;
-import meite.thread.disruptor.factory.LongEventFactory;
- 
+import com.study.meite.thread.disruptor.consumer.LongEventHandler;
+import com.study.meite.thread.disruptor.entity.LongEvent;
+import com.study.meite.thread.disruptor.factory.LongEventFactory;
+
 import java.nio.ByteBuffer;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;

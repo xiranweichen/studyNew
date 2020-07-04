@@ -1,7 +1,7 @@
 package com.study.meite.thread.disruptor.consumer;
 
 import com.lmax.disruptor.EventHandler;
-import meite.thread.disruptor.entity.LongEvent;
+import com.study.meite.thread.disruptor.entity.LongEvent;
 
 /**
  * @description: 第二个消费者

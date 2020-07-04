@@ -1,7 +1,7 @@
 package com.study.meite.thread.disruptor.producer;
 
 import com.lmax.disruptor.RingBuffer;
-import meite.thread.disruptor.entity.LongEvent;
+import com.study.meite.thread.disruptor.entity.LongEvent;
 
 import java.nio.ByteBuffer;
 

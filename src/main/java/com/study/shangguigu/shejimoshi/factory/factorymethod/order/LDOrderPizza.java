@@ -1,8 +1,8 @@
 package com.study.shangguigu.shejimoshi.factory.factorymethod.order;
 
-import shangguigu.shejimoshi.factory.factorymethod.pizza.LDCheesePizza;
-import shangguigu.shejimoshi.factory.factorymethod.pizza.LDPepperPizza;
-import shangguigu.shejimoshi.factory.factorymethod.pizza.Pizza;
+import com.study.shangguigu.shejimoshi.factory.factorymethod.pizza.LDCheesePizza;
+import com.study.shangguigu.shejimoshi.factory.factorymethod.pizza.LDPepperPizza;
+import com.study.shangguigu.shejimoshi.factory.factorymethod.pizza.Pizza;
 
 /**
  * @description:

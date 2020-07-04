@@ -1,7 +1,7 @@
 package com.study.meite.thread.disruptor.factory;
 
 import com.lmax.disruptor.EventFactory;
-import meite.thread.disruptor.entity.LongEvent;
+import com.study.meite.thread.disruptor.entity.LongEvent;
 
 /**
  * @description: event工厂，作用是帮我们实例化LongEvent对象

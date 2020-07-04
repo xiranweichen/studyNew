@@ -1,8 +1,9 @@
 package com.study.shangguigu.shejimoshi.factory.abstractfactory.order;
 
-import shangguigu.shejimoshi.factory.abstractfactory.pizza.BJCheesePizza;
-import shangguigu.shejimoshi.factory.abstractfactory.pizza.BJPepperPizza;
-import shangguigu.shejimoshi.factory.abstractfactory.pizza.Pizza;
+
+import com.study.shangguigu.shejimoshi.factory.abstractfactory.pizza.BJCheesePizza;
+import com.study.shangguigu.shejimoshi.factory.abstractfactory.pizza.BJPepperPizza;
+import com.study.shangguigu.shejimoshi.factory.abstractfactory.pizza.Pizza;
 
 /**
  * @description: 北京工厂类(工厂子类)
