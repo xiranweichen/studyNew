@@ -1,6 +1,5 @@
 package com.study.meite.arraylist.ext;
 
-import java.io.Serializable;
 import java.util.Arrays;
 
 /**

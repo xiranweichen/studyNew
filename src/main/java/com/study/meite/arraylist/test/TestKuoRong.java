@@ -2,9 +2,7 @@ package com.study.meite.arraylist.test;
 
 import org.junit.Test;
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 
 /**
  * @author lizhenhong
