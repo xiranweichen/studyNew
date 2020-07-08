@@ -34,4 +34,11 @@ public class Person {
         System.out.println("=======> walk 路");
     }
 
+    public Person() {
+    }
+
+    public Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
 }
