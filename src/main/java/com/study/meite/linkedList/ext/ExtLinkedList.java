@@ -1,6 +1,4 @@
-package com.study.meite.linkedList;
-
-import java.util.LinkedList;
+package com.study.meite.linkedList.ext;
 
 /**
  * @author lizhenhong
