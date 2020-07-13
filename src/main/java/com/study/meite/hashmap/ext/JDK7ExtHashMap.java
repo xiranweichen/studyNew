@@ -53,8 +53,7 @@ public class JDK7ExtHashMap<K,V> implements ExtMap<K, V> {
             }
         }
         table[index] = node;
-        //4.
-        return node.value;
+        return node.value;   //这里返回的node没啥用
     }
 
     public int getIndex(K k, int length) {
@@ -65,7 +64,19 @@ public class JDK7ExtHashMap<K,V> implements ExtMap<K, V> {
 
     @Override
     public V get(K k) {
-        return null;
+        // 使用取模算法定位数组链表
+        Node<K, V> nodeIndex = table[getIndex(k, DEFAULT_INITIAL_CAPACITY)];
+        Node<K, V> node = getNode(nodeIndex, k);
+        return node == null ? null : node.value;
+    }
+
+    public Node<K, V> getNode(Node<K, V> node, K k) {
+        while (node != null) {
+            if (node.getKey().equals(k))
+                return node;
+            node = node.next;
+        }
+        return node;
     }
 
     @Override
