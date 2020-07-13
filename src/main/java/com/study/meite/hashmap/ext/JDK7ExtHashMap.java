@@ -21,8 +21,46 @@ public class JDK7ExtHashMap<K,V> implements ExtMap<K, V> {
     static final int DEFAULT_INITIAL_CAPACITY = 1 << 4;
 
     @Override
-    public V put(K k, V v) {
-        return null;
+    public V put(K key, V value) {
+        //1. 判断table是否为空，，如果为空，做初始化
+        if (table == null)
+            table = new Node[DEFAULT_INITIAL_CAPACITY];
+        //2. 判断是否需要扩容
+        //3. 计算hash，指定下表位置
+        int index = getIndex(key, DEFAULT_INITIAL_CAPACITY);
+        //判断一下index位置是否有节点元素
+        Node<K, V> node = table[index];
+        if (node == null) {
+            //没有发生hash冲突问题
+            node = new Node<>(key, value, null);
+            //size增大1
+            size++;
+        } else {
+            //先定义一个newNode变量，然后在链表中一直遍历到链表的最后一个元素，如果整个链表中所有元素的key都和传入的key不相等，添加node，否则覆盖之前的node
+            Node<K, V> newNode = node;
+            while (newNode != null) {
+                //发生hash冲突,
+                if (node.getKey().equals(key) || node.getKey() == key) {
+                    //key是同一个对象, 执行修改并返回老的值
+                    return node.setValue(value);
+                } else {
+                    //hashCode取模的余数(index)相同的不同对象
+                    node = new Node<>(key, value, node); //将冲突的node添加，添加到前面了
+                    //size增大1
+                    size++;
+                }
+                newNode = newNode.next;
+            }
+        }
+        table[index] = node;
+        //4.
+        return node.value;
+    }
+
+    public int getIndex(K k, int length) {
+        int hashCode = k.hashCode();
+        int index = hashCode % length;
+        return index;
     }
 
     @Override
@@ -46,7 +84,7 @@ public class JDK7ExtHashMap<K,V> implements ExtMap<K, V> {
 
         // 定义下一个节点Node
         private Node<K, V> next;
-        
+
         @Override
         public K getKey() {
             return this.key;
@@ -67,6 +105,12 @@ public class JDK7ExtHashMap<K,V> implements ExtMap<K, V> {
             V oldValue = this.value;
             this.value = value;
             return oldValue;
+        }
+
+        public Node(K key, V value, Node<K, V> next) {
+            this.key = key;
+            this.value = value;
+            this.next = next;
         }
     }
     
