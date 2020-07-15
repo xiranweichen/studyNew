@@ -3,8 +3,6 @@ package com.study.meite.hashmap;
 import com.study.meite.hashmap.ext.JDK7ExtHashMap;
 import org.junit.Test;
 
-import java.util.Map;
-
 /**
  * @author lizhenhong
  * @Description:
