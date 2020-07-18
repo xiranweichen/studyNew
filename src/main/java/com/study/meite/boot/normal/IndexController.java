@@ -1,4 +1,4 @@
-package com.study.meite.boot;
+package com.study.meite.boot.normal;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
