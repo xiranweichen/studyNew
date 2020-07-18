@@ -65,6 +65,11 @@
             <version>RELEASE</version>
             <scope>compile</scope>
         </dependency>
+        <!-- 引入freemarker依赖 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-freemarker</artifactId>
+        </dependency>
     </dependencies>
 
     <build>
