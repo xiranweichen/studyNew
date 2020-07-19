@@ -80,6 +80,11 @@
             <artifactId>mybatis-spring-boot-starter</artifactId>
             <version>1.1.1</version>
         </dependency>
+        <!-- jta-atomikos依赖(比较原始的分布式事务) -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-jta-atomikos</artifactId>
+        </dependency>
     </dependencies>
 
     <build>

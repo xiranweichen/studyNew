@@ -5,6 +5,7 @@ import com.study.meite.boot.manyDataSource.datasource1.User1Service;
 import com.study.meite.boot.manyDataSource.datasource2.Users;
 import com.study.meite.boot.manyDataSource.datasource2.UsersService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -34,4 +35,9 @@ public class ManyDataSourceTest {
         return result > 0 ? "添加成功" : "添加失败";
     }
 
+    @RequestMapping("/testSource1AndSource2")
+    public int testSource1AndSource2(@RequestBody User1 user1) {
+        int result = user1Service.testUsersAndUser(user1);
+        return result;
+    }
 }
